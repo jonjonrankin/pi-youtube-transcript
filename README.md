@@ -8,17 +8,13 @@ A [pi](https://pi.dev) extension that fetches YouTube video transcripts via the 
 pi install npm:pi-youtube-transcript
 ```
 
-Then run `/reload` in pi (or restart).
-
 ## Usage
 
-The extension registers a `youtube_transcript` tool that pi agents can call automatically whenever you ask about a YouTube video's content.
+The extension registers a `youtube_transcript` tool that pi agents can call automatically when you ask about a YouTube video's content.
 
 **Example prompt:**
 
-> Summarize the transcript of https://youtube.com/watch?v=dQw4w9WgXcQ
-
-Pi will call the tool, fetch the transcript, and work with it.
+> Use youtube_transcript to summarize https://youtube.com/watch?v=dQw4w9WgXcQ
 
 ### Supported URL formats
 
@@ -31,22 +27,6 @@ Pi will call the tool, fetch the transcript, and work with it.
 ### Language
 
 By default the tool returns the first available transcript. To request a specific language, the agent will pass a `lang` parameter (ISO language code like `"en"`, `"es"`, `"fr"`).
-
-## Development
-
-```bash
-git clone https://github.com/pi-packages/pi-youtube-transcript
-cd pi-youtube-transcript
-npm install
-```
-
-Test locally with pi:
-
-```bash
-pi -e .
-# or
-pi install /path/to/pi-youtube-transcript
-```
 
 ## License
 
