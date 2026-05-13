@@ -4,6 +4,14 @@
   "description": "Pi extension to fetch YouTube video transcripts",
   "keywords": ["pi-package", "pi-extension", "youtube", "transcript"],
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jonjonrankin/pi-youtube-transcript.git"
+  },
+  "homepage": "https://github.com/jonjonrankin/pi-youtube-transcript#readme",
+  "bugs": {
+    "url": "https://github.com/jonjonrankin/pi-youtube-transcript/issues"
+  },
   "files": [
     "index.ts",
     "package.json",
